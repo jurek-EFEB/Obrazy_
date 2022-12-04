@@ -1,0 +1,103 @@
+body {
+  background-image: url("./images/czarne-tło.png");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+nav {
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  height: 70px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+header {
+  margin-bottom: 25px;
+}
+
+a,
+a:visited,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+p {
+  font-size: 20px;
+}
+
+span {
+  color: yellow;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+figcaption {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 300px;
+}
+
+.resources {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.resources a {
+  color: white;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
